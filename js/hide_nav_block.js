@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function hide_mkdocs_footer() {
     document.querySelectorAll('.md-footer-meta.md-typeset')[0].remove();
+    //document.querySelectorAll('.md-footer-nav')[0].remove();
 }
 
 
