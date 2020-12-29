@@ -13,3 +13,32 @@
 h2, h3 {
   color: var(--md-default-fg-color--light);
 }
+
+.ref-button {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  box-sizing: border-box;
+  width: 40%;
+  padding:6px;
+  margin-right:6px;
+  border: solid 1px #101223;
+  border-radius: 15px;
+}
+
+.ref-button:hover {
+  transition-duration: 0.4s;
+  background-color: #101223;
+}
+
+.ref-button-icon {
+  box-sizing: border-box;
+  width: 30px;
+}
+
+.ref-button-title {
+  margin-left:0.8em;
+  margin-right:0.8em;
+  width:40%;
+  text-align:center;
+}
