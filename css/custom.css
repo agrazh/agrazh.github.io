@@ -19,6 +19,7 @@ h2, h3 {
 
 .flex-row {
   display:flex;
+  flex-direction: row;
   width: 100%;
 }
 
@@ -27,14 +28,43 @@ h2, h3 {
   flex-direction: column;
   align-items:center;
   box-sizing: border-box;
-  width: 40%;
+  width: 48%;
   padding:6px;
   margin-right:6px;
   border: solid 1px #101223;
   border-radius: 15px;
 }
 
+.ref-button-2 {
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  box-sizing: border-box;
+  width: 48%;
+  padding:6px;
+  margin-right:6px;
+  border: solid 1px #101223;
+  border-radius: 15px;
+}
+
+.ref-button-2-middle {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  box-sizing: border-box;
+  width: 60%;
+  padding:6px;
+  margin-right:6px;
+  /* border: solid 1px #101223;
+  border-radius: 15px; */
+}
+
 .ref-button:hover {
+  transition-duration: 0.4s;
+  background-color: #101223;
+}
+
+.ref-button-2:hover {
   transition-duration: 0.4s;
   background-color: #101223;
 }
