@@ -38,12 +38,15 @@ h2, h3 {
 }
 
 .ref-button-2 {
-  display:flex;
+  display: flex;
   flex-direction: row;
+  /* flex-grow: 1; */
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   width: 10em;
+  /* min-width: 10em;
+  max-width: 12em; */
   padding: 6px;
   margin: 6px;
   border: solid 1px #101223;
@@ -88,5 +91,8 @@ h2, h3 {
   /* new custom rule */
   .md-content {
     margin-left: 16%;
+  }
+  .flex-row {
+    width: 76%;
   }
 }
