@@ -124,6 +124,14 @@ h2, h3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: start;
+  width: 76%;
+}
+
+@media screen and (max-width: 60em) {
+  .post-link {
+    width: 100%;
+  }
+  
 }
 
 .post-link > .img {
@@ -137,8 +145,17 @@ h2, h3 {
 }
 
 .post-link > .body {
-  width: 60%;
+  width: 70%;
 }
+
+@media screen and (max-width: 40em) {
+  .post-link > .body {
+    width: 100%;
+  }
+}
+
+
+
 
 .post-link > .body > .title > a {
   font-size: 18px;
