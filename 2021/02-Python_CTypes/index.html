@@ -14,7 +14,7 @@
     
     
       
-        <title>Welcome to MkDocs. MkLorum - zh-notes</title>
+        <title>CTypes. Call C function from Python - zh-notes</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs-mklorum" class="md-skip">
+        <a href="#ctypes-call-c-function-from-python" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs. MkLorum
+              CTypes. Call C function from Python
             
           </span>
         </div>
@@ -148,7 +148,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -213,49 +215,10 @@
 
 
 
-  
-  <li class="md-nav__item md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
-    
-    <label class="md-nav__link" for="nav-4">
-      <span class="md-nav__icon md-icon"></span>
-      
-        <a href="../../other/" class="md-nav__link"
-          style="margin: initial; padding: initial; pointer-events: initial">
-      
-        other
-      </a>
-    </label>
-    <nav class="md-nav" aria-label="other" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon"></span>
-        
-          <a href="../../other/" class="md-nav__link"
-            style="margin: initial; padding: initial; pointer-events: initial">
-        
-          other
-        </a>
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
   <li class="md-nav__item">
-    <a href="../12-vs_code-ps_cannot_be_loaded/" class="md-nav__link">
-      VS Code: PS can't be loaded
+    <a href="../../other/" class="md-nav__link">
+      other
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -276,63 +239,18 @@
     <label class="md-nav__link" for="nav-5">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../Python_CTypes/" class="md-nav__link"
-          style="margin: initial; padding: initial; pointer-events: initial">
-      
         archive
-      </a>
+      
     </label>
     <nav class="md-nav" aria-label="archive" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../Python_CTypes/" class="md-nav__link"
-            style="margin: initial; padding: initial; pointer-events: initial">
-        
           archive
-        </a>
+        
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../Python_Generators/" class="md-nav__link">
-      Generators
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../article_1/" class="md-nav__link">
-      Header
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../article_2/" class="md-nav__link">
-      Header
-    </a>
-  </li>
-
         
           
           
@@ -355,12 +273,12 @@
           <a href="./" class="md-nav__link md-nav__link--active"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Welcome to MkDocs. MkLorum
+          CTypes. Call C function from Python
         </a>
       </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Welcome to MkDocs. MkLorum
+      CTypes. Call C function from Python
     </a>
     
       
@@ -377,15 +295,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#prepare-so-shared-object-file" class="md-nav__link">
+    Prepare .so (shared object) file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#calling-from-py-code" class="md-nav__link">
+    Calling from .py code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#going-deeper" class="md-nav__link">
+    Going deeper
   </a>
   
 </li>
@@ -404,8 +329,21 @@
 
 
   <li class="md-nav__item">
-    <a href="../post_2/" class="md-nav__link">
-      Welcome to MkDocs. MkLorum
+    <a href="../../2020/12-vs_code-ps_cannot_be_loaded/" class="md-nav__link">
+      VS Code: PS can't be loaded
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Python_Generators/" class="md-nav__link">
+      Generators
     </a>
   </li>
 
@@ -422,6 +360,8 @@
               </div>
             
             
+              
+                
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
                 <div class="md-sidebar__scrollwrap">
@@ -440,15 +380,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#prepare-so-shared-object-file" class="md-nav__link">
+    Prepare .so (shared object) file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#calling-from-py-code" class="md-nav__link">
+    Calling from .py code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#going-deeper" class="md-nav__link">
+    Going deeper
   </a>
   
 </li>
@@ -466,22 +413,64 @@
               
                 
                 
-                <h1 id="welcome-to-mkdocs-mklorum">Welcome to MkDocs. MkLorum</h1>
-<p>MkLorum</p>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+                <h1 id="ctypes-call-c-function-from-python">CTypes. Call C function from Python</h1>
+<p>If you need to <u>call C function without modifying C source files</u> then try CTypes module. CTypes module provides C compatible data types and functions to load DLLs so that calls can be made to C shared libraries without having to modify them.</p>
+<h2 id="prepare-so-shared-object-file">Prepare <code>.so</code> (shared object) file</h2>
+<p>Consider the following example of <code>lib.c</code>:</p>
+<pre><code>#include &lt;stdio.h&gt;
+
+void alert(char message[20]) {
+    printf(&quot;\nAlert: %s\n&quot;, message);
+}
+
+float add_nums(int num1, float num2) {
+    return num1 + num2;
+}
 </code></pre>
+<p>Generate a shared library by compiling C code with the <code>-fPIC</code> flag (position independent code):</p>
+<pre><code>gcc -c -fPIC lib.c -o lib.o
+gcc lib.o -shared -o lib.so
+</code></pre>
+<p>or simply:</p>
+<pre><code>gcc -shared -o lib.so -fPIC lib.c
+</code></pre>
+<p>Also you may want to use the following flags:</p>
+<ul>
+<li><code>-Wall</code> to get all warnings</li>
+<li><code>-g</code> to get debugging information</li>
+</ul>
+<h2 id="calling-from-py-code">Calling from <code>.py</code> code</h2>
+<p>Consider the following example of <code>call_cfunc.py</code>:</p>
+<pre><code>from ctypes import *
+
+#load the shared object file
+lib = CDLL('./lib.so')
+
+# passing a string 
+lib.alert(create_string_buffer(b&quot;calling function&quot;, 20))
+
+# passing int and float
+a = c_int(10)
+b = c_float(10.23)
+
+add_nums = lib.add_nums
+add_nums.restype = c_float
+
+print(&quot;Sum of nums: {:.2f}&quot;.format(add_nums(a, b)))
+</code></pre>
+<p>Execute:</p>
+<pre><code>$ python call_cfunc.py
+
+Alert: calling function
+Sum of nums: 20.23
+</code></pre>
+<h2 id="going-deeper">Going deeper</h2>
+<ul>
+<li>CTypes library - <a href="https://docs.python.org/3.7/library/ctypes.html">docs.python.org</a></li>
+<li>CTypes compatible data types - <a href="https://docs.python.org/3.7/library/ctypes.html#fundamental-data-types">docs.python.og</a></li>
+</ul>
+                
+                  
                 
               
               
@@ -500,7 +489,7 @@ docs/
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../article_2/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../other/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -509,19 +498,19 @@ docs/
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Header
+                other
               </div>
             </div>
           </a>
         
         
-          <a href="../post_2/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../2020/12-vs_code-ps_cannot_be_loaded/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Welcome to MkDocs. MkLorum
+                VS Code: PS can't be loaded
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

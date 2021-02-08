@@ -24,18 +24,6 @@ h2, h3 {
   width: 100%;
 }
 
-/* .ref-button {
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  box-sizing: border-box;
-  width: 10em;
-  padding: 6px;
-  margin: 6px;
-  border: solid 1px #101223;
-  border-radius: 15px;
-} */
-
 .ref-button {
   display: flex;
   flex-direction: row;
@@ -127,4 +115,42 @@ h2, h3 {
   .flex-row {
     width: 76%;
   }
+}
+
+/* Post link*/
+
+.post-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.post-link > .img {
+  margin-right: 1em;
+  width: 160px;
+}
+
+
+.post-link > .img > img {
+  border-radius: 14px;
+}
+
+.post-link > .body {
+  width: 60%;
+}
+
+.post-link > .body > .title > a {
+  font-size: 18px;
+  border-bottom: 1px dotted;
+  color: inherit;
+}
+
+.post-link > .body > .title > a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+
+.post-link > .body > .metadata {
+  font-size: 10px;
 }
